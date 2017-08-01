@@ -18,7 +18,43 @@
         <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
         <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
         <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>      
-        
+        ========================================== -->
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+		<!-- =====================================
+			Some importent css for the site
+			#Bootstrap
+			#Font-awesome
+			#Fonts
+		========================================== -->
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.css" media="all" />
+		<link rel="stylesheet" type="text/css" href="http://www.jq22.com/jquery/font-awesome.4.6.0.css">
+		<link rel="stylesheet" type="text/css" href="css/fonts.css" media="all" />
+	
+		<!-- =====================================
+			Some of extra effict css
+		========================================== -->	
+		<link rel="stylesheet" href="css/owl.carousel.css">
+		<link rel="stylesheet" href="css/owl.theme.css">
+		<link rel="stylesheet" type="text/css" href="css/full-slider.css" media="all" />
+		<link rel="stylesheet" type="text/css" href="css/jPushMenu.css" media="all" />
+		<link rel="stylesheet" type="text/css" href="css/hover.css" media="all" />
+		<link rel="stylesheet" type="text/css" href="css/jquery.fancybox.css" media="all" />
+		<link rel="stylesheet" type="text/css" href="css/animate.css" media="all" />
+		<link rel="stylesheet" type="text/css" href="css/preload.css" media="all" />
+		
+		<!--=========================
+			Favicon of this site 
+		============================== -->
+		<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+		
+		<!--=========================
+			Some of main css 
+		============================== -->
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/main.css"><!--css for Main sayle-->
+        <link rel="stylesheet" href="css/media.css"><!--css for Responsive-->
+        <script src="js/vendor/modernizr-2.8.3.min.js"></script>
         <style>
             body {
                 overflow: hidden;
@@ -41,7 +77,138 @@
         <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
+	        <div id="loader-wrapper">
+				<div id="loader"></div>
+	
+				<div class="loader-section section-left"></div>
+	            <div class="loader-section section-right"></div>
+	
+			</div>
+		
+		
+			<!--=========================
+				Start area for Menu 
+			============================== -->
+			<nav class="cbp-spmenu cbp-spmenu-vertical cbp-spmenu-right">
+				<img src="img/logo.png" alt="" />
+				<a href="#myCarousel">Home</a>
+				<a href="#hireme_area">About me</a>
+				<a href="#service_area">Services</a>
+				<a href="#project_area">Portfolio</a>
+				<a href="#contact_area">Hire me</a>
+			</nav>
+			
+			<div class="manu_div toggle-menu menu-right push-body">
+				<button class=""><i class="fa fa-indent"></i></button>
+			</div><!-- End of menu area -->
+			
+	        <!--[if lt IE 8]>
+	            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+	        <![endif]-->
+	
+		<!--=========================
+			Start area for Header
+		============================== -->
+	    <header id="myCarousel" class="carousel slide">
+	       
+				<!-- Indicators -->
+	        <ol class="carousel-indicators">
+	            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+	            <li data-target="#myCarousel" data-slide-to="1"></li>
+	            <li data-target="#myCarousel" data-slide-to="2"></li>
+	        </ol>
+			
+			
+	        <!-- Wrapper for Slides -->
+	        <div class="carousel-inner">
+			
+				<!-- Start Overlay heady -->
+				<div class="header_overlay">
+					<div class="container">
+					
+						<!-- Site logo -->
+						<div class="row header_top">
+							<div class="col-md-12 col-sm-12 col-xs-12 logo_div">
+								<img src="img/logo.png" alt="" />
+							</div>
+						</div><!-- End Logo -->
+						
+						<!-- Header About -->
+						<div class="row header_text">
+							<div class="col-md-6 col-sm-12 col-xs-12">
+								<h1>Hello, I'm <span>Eftakher</span><br/>
+								A <span>FrontEnd</span> designer</h1>
+							</div>
+							<div class="col-md-6 "></div>
+						</div><!-- End Header About -->
+						
+						<!-- Header promo -->
+						<div class="row header_promo">
+							<div class="col-md-3 col-sm-3 col-xs-6">
+								<div class="single_promo hvr-sweep-to-bottom">
+									<i class="fa fa-mobile"></i>
+									<h2>.UI/UX Design</h2>
+									<a href="#">Read More</a>
+								</div>
+							</div>
+							<div class="col-md-3  col-sm-3 col-xs-6">
+								<div class="single_promo hvr-sweep-to-bottom">
+									<i class="fa fa-desktop"></i>
+									<h2>.UI/UX Design</h2>
+									<a href="#">Read More</a>
+								</div>
+							</div>
+							<div class="col-md-3  col-sm-3 col-xs-6">
+								<div class="single_promo hvr-sweep-to-bottom">
+									<i class="fa fa-lightbulb-o"></i>
+									<h2>.UI/UX Design</h2><a href="#">Read More</a>
+								</div>
+							</div>
+							<div class="col-md-3 col-sm-3 col-xs-6">
+								<div class="single_promo hvr-sweep-to-bottom">
+									<i class="fa fa-camera"></i>
+									<h2>.UI/UX Design</h2>
+									<a href="#">Read More</a>
+								</div>
+							</div>
+						</div><!-- End Header Ptomo -->
+						
+					</div>
+				</div>
+			
+	            <div class="item active">
+	                <!-- Set the first background image using inline CSS below. -->
+	                <div class="fill" style="background-image:url('img/images/beautiful-hydrangea-garden-wallpaper-53175d37ab11d);"></div>
+					<div class="carousel-caption overlay">
+	                    
+	                </div>
+	            </div>
+	            <div class="item">
+	                <!-- Set the second background image using inline CSS below. -->
+	                <div class="fill" style="background-image:url('img/images/beautiful-hydrangea-garden-wallpaper-53175d37ab11d');"></div>
+					<div class="carousel-caption overlay">
+	                    
+	                </div>
+	            </div>
+	            <div class="item">
+	                <!-- Set the third background image using inline CSS below. -->
+	                <div class="fill" style="background-image:url('img/images/beautiful-hydrangea-garden-wallpaper-53175d37ab11d);"></div>
+					<div class="carousel-caption overlay">
+	                    
+	                </div>
+	            </div>
+	        </div>
+	
+	    </header><!-- End of Header Area -->
+        
         <img id="background" alt="background" src="" />
+        <script src="js/jPushMenu.js"></script>
+		<script src="js/owl.carousel.js"></script>
+		<script src="js/jquery.fancybox.js"></script>
+		<script src="js/jquery.fancybox.pack.js"></script>
+		<script src="js/wow.min.js"></script>
+		<script src="js/plugins.js"></script>
+        <script src="js/main.js"></script>
         <script>
             function run() {
                 var image = document.getElementById('background');
