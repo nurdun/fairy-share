@@ -6,110 +6,57 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title></title>
-        <meta name="description" content="">
+        <title>欢迎来到小布丁的分享</title>
+        <meta name="description" content="小布丁的分享">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="小布丁的分享">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <!-- 最新版本的 Bootstrap 核心 CSS 文件 -->
         <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
         <!-- 可选的 Bootstrap 主题文件（一般不用引入） -->
         <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
         <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
-        <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-        <style type="text/css">
-            html {
-                overflow: hidden;
-                -ms-touch-action: none;
-                -ms-content-zooming: none;
-            }
+        <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>      
+        
+        <style>
             body {
-                position: absolute;
-                margin: 0px;
-                padding: 0px;
-                background: #fff;
-                width: 100%;
+                overflow: hidden;
                 height: 100%;
-            }
-            #screen {
-                position: absolute;
-                left:0;
-                top:0;
-                width: 100%;
-                height: 100%;
-                background:url(images/t016a56b2c2347605b0.jpg);
-                perspective:500px;
-                -webkit-perspective:500px;
-            }
-
-            .cube {
-                position: absolute;
-                top: 50%;
-                left: 50%;
-                width: 0;
-                height: 0;
                 margin: 0;
-                user-select: none;
-                transform-style: preserve-3d;
-                -webkit-transform-style: preserve-3d;
+                padding: 0;
             }
 
-            .face {
-                position: absolute;
-                margin-left:-300px;
-                margin-top:-200px;
-                width:600px;
-                height:400px;
-                backface-visibility: hidden;
-                -webkit-backface-visibility: hidden;
-                transform-origin:50% 50%;
-                -webkit-transform-origin:50% 50%;
-                transition: outline 0.5s ease-in-out 0s;
-                cursor: pointer;
-            }
-
-            .button {
-                position: absolute;
-                margin-left:-150px;
-                margin-top:-100px;
-                width:300px;
-                height:200px;
-            }
-            .face:hover {
-                outline: rgba(255,255,255,1) solid 10px !important;
+            img {
+                width: 100%;
+                height: 100%;
             }
         </style>
+        <script src="js/rainyday.min.js"></script> 
+        <!--[if IE]>
+		    <script src="http://libs.useso.com/js/html5shiv/3.7/html5shiv.min.js"></script>
+	    <![endif]-->
     </head>
     <body>
         <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
-        <div calss="index">
-            <header calss="nav">
-                
-            </header>
-            <div class="main">
-                <div id="screen">
-                 <div id="cube" class='cube'>
-                    <!-- cube images -->
-                    <img id="1" src="images/t01543895667394ee8b.jpg" class='face' data-transform="translateZ(-400px)" style="outline:none !important">
-                    <img id="2" src="images/1-1F316114413520.jpg" class='face' data-transform="rotateY(90deg) translateZ(-400px)">
-                    <img id="3" src="images/1-1F316114429259.jpg"  class='face' data-transform="rotateY(-90deg) translateZ(-400px)">
-                    <img id="4" src="images/20121016223006408.jpg" class='face' data-transform="rotateY(180deg) translateZ(-400px)">
-                    <img id="5" src="images/1fab1f07-2a95-40f6-87c0-4727cb30778d.jpg" class='face' data-transform="rotateX(90deg) translateZ(-300px)">
-                    <img id="6" src="images/1-16061G024070-L.jpg"  class='face' data-transform="rotateX(-90deg) translateZ(-300px)">
-                    <!-- bonus image -->
-                    <img id="7" src="20121016223006408.jpg"  class='face' data-transform="rotateY(180deg) translateZ(305px)" style="visibility:hidden">
-                    <!-- buttons -->
-                    <img src="images/45607120-1a26-4b7e-93a2-adb3dd6d70a5.jpg" class='face button' alt="7" data-transform="translateY(-80px) translateZ(-340px) scale(0.5)">
-                    <img src="images/45607120-1a26-4b7e-93a2-adb3dd6d70a5.jpg" class='face button' alt="2" data-transform="translateX(-200px) translateY(-80px) translateZ(-340px) scale(0.5)">
-                    <img src="images/45607120-1a26-4b7e-93a2-adb3dd6d70a5.jpg"  class='face button' alt="3" data-transform="translateX(200px) translateY(-80px) translateZ(-340px) scale(0.5)">
-                    <img src="images/45607120-1a26-4b7e-93a2-adb3dd6d70a5.jpg" class='face button' alt="4" data-transform="translateY(80px) translateZ(-340px) scale(0.5)">
-                    <img src="images/45607120-1a26-4b7e-93a2-adb3dd6d70a5.jpg" class='face button' alt="5" data-transform="translateX(-200px) translateY(80px) translateZ(-340px) scale(0.5)">
-                    <img src="images/45607120-1a26-4b7e-93a2-adb3dd6d70a5.jpg"  class='face button' alt="6" data-transform="translateX(200px) translateY(80px) translateZ(-340px) scale(0.5)">
-                </div>
-            </div>
-            <script type="text/javascript" src="js/main.js"></script>
-            </div>
-        </div>
-        
+        <img id="background" alt="background" src="" />
+        <script>
+            function run() {
+                var image = document.getElementById('background');
+                image.onload = function() {
+                    var engine = new RainyDay({
+                        image: this
+                    });
+                    //engine.rain([ [3, 2, 2] ], 100);
+                    engine.rain([ [1, 2, 8000] ]);
+                    engine.rain([ [3, 3, 0.88], [5, 5, 0.9], [6, 2, 1] ], 100);
+                };
+                image.crossOrigin = 'anonymous';
+                image.src = 'images/beautiful-hydrangea-garden-wallpaper-53175d37ab11d.jpg';
+            }
+            run();
+        </script>
     </body>
 </html>
