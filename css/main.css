@@ -295,6 +295,7 @@ textarea {
   z-index: 15;
   text-align:right;
   padding:0;
+  height: 80px;
 }
 .carousel-indicators li {
 display:block;
